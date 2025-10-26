@@ -6,7 +6,7 @@ class region(models.Model):
     area = models.FloatField()
 
     def __str__(self):
-        return self.name
+        return self.r_name
 
 class city(models.Model):
     c_name = models.CharField(max_length=100)
@@ -29,9 +29,9 @@ class farm(models.Model):
     owner = models.CharField(max_length=100)
     address = models.CharField(max_length=200)
     city = models.ForeignKey(city, on_delete=models.CASCADE)
-    land_area = models.FloatField()
+    land_area = models.DecimalField(max_digits=10, decimal_places=2)
     # 생산량
-    production = models.FloatField()
+    production = models.DecimalField(max_digits=10, decimal_places=2)
     # 인증 날짜, 인증종료날짜
     cert_date = models.DateField()
     cert_end_date = models.DateField()
