@@ -47,24 +47,28 @@
 ---
 
 ## 🧩 폴더 구조
-   gap-dashboard/
-   ├── data/
-   │   ├── cleande/gap.csv
-   │   └──raw/2020~2025.csv
-   │
-   ├── preprocessing/clean_gap_data.py
-   │
-   ├── redshift/
-   │   ├── tables.sql
-   │   └── load_data.py
-   │
-   ├── s3_upload/
-   │   └── upload_to_s3.py
-   │
-   ├── visualization/
-   │   └── 
-   │
-   └── README.md
+ gap-dashboard/
+├── data/
+│ ├── raw/
+│ │ ├── 2020~2025.csv
+│ │
+│ └── cleaned/
+│ └── gap.csv
+│
+├── preprocessing/
+│ └── clean_gap_data.py # 원본 CSV 데이터 정제 (병합, 컬럼 정리 등)
+│
+├── redshift/
+│ ├── tables.sql # Redshift용 테이블 정의 DDL
+│ └── load_data.py # S3 → Redshift COPY 적재 스크립트
+│
+├── s3_upload/
+│ └── upload_to_s3.py # 정제된 CSV를 S3 버킷에 업로드
+│
+├── visualization/
+│ └── (superset 대시보드 설정 또는 시각화 관련 파일)
+│
+└── README.md # 프로젝트 개요 및 실행 가이드
 ---
 
 ## 💻 기술 스택
