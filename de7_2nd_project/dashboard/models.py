@@ -37,6 +37,8 @@ class farm(models.Model):
     cert_end_date = models.DateField()
     # 품목 테이블 ForeignKey
     items = models.ManyToManyField(item)
+    # 인증 유효 여부
+    valid = models.BooleanField(default=True)
 
     def __str__(self):
         return self.f_name
