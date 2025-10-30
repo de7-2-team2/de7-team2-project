@@ -15,7 +15,7 @@ GAP 농산물 우수관리(GAP) 인증정보 대시보드
    - 정부의 스마트 농업 및 데이터 기반 행정 정책관의 연계
 
 - 개발 환경
-<img width="697" height="297" alt="image" src="https://github.com/user-attachments/assets/94319319-0fcf-44ee-9269-81d13f3b25c6" /></br>
+<img width="697" height="297" alt="image" src="https://github.com/user-attachments/assets/94319319-0fcf-44ee-9269-81d13f3b25c6" />
 
 - 시스템 구조</br>
 <img width="775" height="430" alt="image" src="https://github.com/user-attachments/assets/7e46079e-f708-45ee-a82d-620064079f79" />
